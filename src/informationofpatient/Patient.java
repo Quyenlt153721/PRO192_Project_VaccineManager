@@ -3,7 +3,6 @@ package informationofpatient;
 
 public class Patient extends Person{
     private String ID;//Id thẻ bảo hiểm y tế
-    private String Benhlynen;//thông tin bệnh lí nền
     private boolean daTiemMui_1;
     private boolean daTiemMui_2;
     
