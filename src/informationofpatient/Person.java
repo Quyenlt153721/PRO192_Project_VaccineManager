@@ -6,13 +6,13 @@ public class Person {
     protected int Age;
     protected String Sex;
     protected String Address;
-    protected String PhoneNumber;
+    protected int PhoneNumber;
    
 
     public Person() {
     }
 
-    public Person(String name, int Age, String Sex, String Address, String Phone) {
+    public Person(String name, int Age, String Sex, String Address, int Phone) {
         this.name = name;
         this.Age = Age;
         this.Sex = Sex;
@@ -53,11 +53,11 @@ public class Person {
         this.Address = Address;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return PhoneNumber;
     }
 
-    public void setPhone(String Phone) {
+    public void setPhone(int Phone) {
         this.PhoneNumber = Phone;
     }
 

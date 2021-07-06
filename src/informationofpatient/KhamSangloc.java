@@ -22,7 +22,7 @@ public class KhamSangloc extends Patient{
         super();
     }
 
-    public KhamSangloc(String name, int Age, String Sex, String Address, String Phone, String ID,boolean ho, boolean sot, int huyetAp, boolean Suy_Giam_MD, boolean ungthu, boolean ViemGan, boolean sd_khangSinh) {
+    public KhamSangloc(String name, int Age, String Sex, String Address, int Phone, int ID,boolean ho, boolean sot, int huyetAp, boolean Suy_Giam_MD, boolean ungthu, boolean ViemGan, boolean sd_khangSinh) {
         super(name, Age, Sex, Address, Phone, ID);
         this.ho = ho;
         this.sot = sot;

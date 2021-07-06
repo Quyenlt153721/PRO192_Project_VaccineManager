@@ -14,4 +14,6 @@ import java.util.ArrayList;
 public class ThongTinTiemchung {
     ArrayList<Patient> list = new ArrayList<>();
     
+    Patient p = new Patient("ghsd", 4, "super.is", "ád", "sad", "sad");
+    (KhamSangloc) p = new KhamSangloc();
 }

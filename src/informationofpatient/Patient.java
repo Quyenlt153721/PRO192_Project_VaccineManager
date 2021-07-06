@@ -2,7 +2,7 @@
 package informationofpatient;
 
 public class Patient extends Person{
-    private String ID;//Id thẻ bảo hiểm y tế
+    private int ID;//Id thẻ bảo hiểm y tế
     private boolean daTiemMui_1;
     private boolean daTiemMui_2;
     
@@ -10,16 +10,16 @@ public class Patient extends Person{
         super();
     }
 
-    public Patient( String name, int Age, String Sex, String Address, String Phone,String ID) {
+    public Patient( String name, int Age, String Sex, String Address, int Phone,int ID) {
         super(name, Age, Sex, Address, Phone);
         this.ID = ID;
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
