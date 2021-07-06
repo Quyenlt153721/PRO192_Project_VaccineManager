@@ -19,6 +19,7 @@ public class KhamSangloc extends Patient{
     private boolean sd_khangSinh;
 
     public KhamSangloc() {
+        super();
     }
 
     public KhamSangloc(String name, int Age, String Sex, String Address, String Phone, String ID,boolean ho, boolean sot, int huyetAp, boolean Suy_Giam_MD, boolean ungthu, boolean ViemGan, boolean sd_khangSinh) {
@@ -86,6 +87,11 @@ public class KhamSangloc extends Patient{
 
     public void setSd_khangSinh(boolean sd_khangSinh) {
         this.sd_khangSinh = sd_khangSinh;
+    }
+
+    @Override
+    public String toString() {
+        return name + ", " + Age + ", " + Sex + ", " + Address + ", " + PhoneNumber+"ID=" + super.getID() + ", daTiemMui_1=" + super.isDaTiemMui_1() + ", daTiemMui_2=" + super.isDaTiemMui_2()+"ho=" + ho + ", sot=" + sot + ", huyetAp=" + huyetAp + ", Suy_Giam_MD=" + Suy_Giam_MD + ", ungthu=" + ungthu + ", ViemGan=" + ViemGan + ", sd_khangSinh=" + sd_khangSinh ;
     }
         
 }
