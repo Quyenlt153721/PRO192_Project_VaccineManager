@@ -23,50 +23,30 @@ public class Patient extends Person{
         this.ID = ID;
     }
 
-    public String getName() {
-        return name;
+    public boolean isDaTiemMui_1() {
+        return daTiemMui_1;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDaTiemMui_1(boolean daTiemMui_1) {
+        this.daTiemMui_1 = daTiemMui_1;
     }
 
-    public int getAge() {
-        return Age;
+    public boolean isDaTiemMui_2() {
+        return daTiemMui_2;
     }
 
-    public void setAge(int Age) {
-        this.Age = Age;
+    public void setDaTiemMui_2(boolean daTiemMui_2) {
+        this.daTiemMui_2 = daTiemMui_2;
     }
 
-    public String getSex() {
-        return Sex;
-    }
-
-    public void setSex(String Sex) {
-        this.Sex = Sex;
-    }
-
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String Address) {
-        this.Address = Address;
-    }
-
-    public String getPhoneNumber() {
-        return PhoneNumber;
-    }
-
-    public void setPhoneNumber(String PhoneNumber) {
-        this.PhoneNumber = PhoneNumber;
-    }
+  
 
     @Override
     public String toString() {
-        return "Patient{" + "ID=" + ID + '}';
+        return "Patient{" + "ID=" + ID + ", daTiemMui_1=" + daTiemMui_1 + ", daTiemMui_2=" + daTiemMui_2 + '}';
     }
+
+   
     
     
 }
