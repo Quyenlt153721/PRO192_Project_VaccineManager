@@ -13,6 +13,5 @@ import java.util.ArrayList;
  */
 public class ThongTinTiemchung {
     ArrayList<Patient> list = new ArrayList<>();
-    String name
-    Person p = new Patient(name, 0, Sex, Address, Phone, ID);
+    
 }
