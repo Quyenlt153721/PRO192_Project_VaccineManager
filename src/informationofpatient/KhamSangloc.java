@@ -5,6 +5,8 @@
  */
 package informationofpatient;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author DELL
@@ -22,8 +24,8 @@ public class KhamSangloc extends Patient{
         super();
     }
 
-    public KhamSangloc(String name, int Age, String Sex, String Address, int Phone, int ID,boolean ho, boolean sot, int huyetAp, boolean Suy_Giam_MD, boolean ungthu, boolean ViemGan, boolean sd_khangSinh) {
-        super(name, Age, Sex, Address, Phone, ID);
+    public KhamSangloc(String name, int Age, String Sex, String Address, String Phone, int ID, int soLantiem, LocalDate ngayTiemGanNhat,boolean ho, boolean sot, int huyetAp, boolean Suy_Giam_MD, boolean ungthu, boolean ViemGan, boolean sd_khangSinh) {
+        super(name, Age, Sex, Address, Phone, ID, soLantiem, ngayTiemGanNhat);
         this.ho = ho;
         this.sot = sot;
         this.huyetAp = huyetAp;
@@ -91,7 +93,7 @@ public class KhamSangloc extends Patient{
 
     @Override
     public String toString() {
-        return name + ", " + Age + ", " + Sex + ", " + Address + ", " + PhoneNumber+"ID=" + super.getID() + ", daTiemMui_1=" + super.isDaTiemMui_1() + ", daTiemMui_2=" + super.isDaTiemMui_2()+"ho=" + ho + ", sot=" + sot + ", huyetAp=" + huyetAp + ", Suy_Giam_MD=" + Suy_Giam_MD + ", ungthu=" + ungthu + ", ViemGan=" + ViemGan + ", sd_khangSinh=" + sd_khangSinh ;
+        return name + ", " + Age + ", " + Sex + ", " + Address + ", " + PhoneNumber+"ID=" + super.getID() + "Số lần tiêm: " +getSoLantiem()+"ho=" + ho + ", sot=" + sot + ", huyetAp=" + huyetAp + ", Suy_Giam_MD=" + Suy_Giam_MD + ", ungthu=" + ungthu + ", ViemGan=" + ViemGan + ", sd_khangSinh=" + sd_khangSinh ;
     }
         
 }
